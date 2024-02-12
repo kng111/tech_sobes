@@ -1,0 +1,10 @@
+Django,Flask
+PostgeSql,SQL
+pytest
+OOП ( solid )
+asynco
+linux ( базовый )
+QT ( pyQT, многопоточность делать в ручную )
+Брокеры очередей
+git
+Управление памятью 
