@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "category": "lunch",
+            "name": "Обед 1",
+            "description": "Описание обеда 1",
+            "price": "150 руб."
+        },
+        {
+            "category": "lunch",
+            "name": "Обед 2",
+            "description": "Описание обеда 2",
+            "price": "180 руб."
+        },
+        {
+            "category": "drinks",
+            "name": "Напиток 1",
+            "description": "Описание напитка 1",
+            "price": "50 руб."
+        },
+        {
+            "category": "drinks",
+            "name": "Напиток 2",
+            "description": "Описание напитка 2",
+            "price": "70 руб."
+        }
+    ]
+}

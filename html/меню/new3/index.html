@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Макдоналдса</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Меню Макдоналдса</h1>
+    </header>
+
+    <nav>
+        <button class="category-btn" data-category="all">Все</button>
+        <button class="category-btn" data-category="lunch">Обеды</button>
+        <button class="category-btn" data-category="drinks">Горячие напитки</button>
+    </nav>
+
+    <section class="menu" id="menu">
+        <div class="item lunch" onclick="showDetails('Обед 1', 'Описание обеда 1', '150 руб.')">
+            <img src="lunch1.jpg" alt="Обед 1">
+            <h2>Обед 1</h2>
+            <p>Описание обеда 1</p>
+            <span class="price">150 руб.</span>
+        </div>
+
+        <!-- Другие элементы меню здесь -->
+    </section>
+
+    <div class="overlay" id="overlay"></div> <!-- Добавляем overlay -->
+
+    <div class="item-details" id="item-details">
+        <h2 id="item-name"></h2>
+        <p id="item-description"></p>
+        <p>Калории: <span id="item-calories"></span></p>
+        <button class="close-details" onclick="closeDetails()">Закрыть</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

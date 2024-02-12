@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.men, .women {
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+}
+
+.men {
+    background-color: #6fa5fc;
+}
+
+.women {
+    background-color: #ffb6c1;
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    color: #333;
+}

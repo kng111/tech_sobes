@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    background-color: #f2f2f2;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.category:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menuItem {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    max-width: 300px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.menuItem img {
+    max-width: 100%;
+}
+
+.menuItem:hover {
+    transform: scale(1.05);
+}
+
+.details {
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+
+#popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#popupTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#popupContent {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#closePopup {
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+#closePopup:hover {
+    background-color: #555;
+}

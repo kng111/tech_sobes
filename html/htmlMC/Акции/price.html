@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNG: Прогноз компании</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #969494;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #5f5c5c;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow-y: auto;
+            height: 80vh;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .scroll-btn {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #e6e6e6;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .scroll-up {
+            left: 10px;
+        }
+
+        .scroll-down {
+            right: 10px;
+        }
+
+        .section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        .section-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">KNG: Прогноз компании</div>
+        <div class="section">
+            <div class="section-content">
+                <h2>Секция 1</h2>
+                <img src="Сбер.png" alt="Image 1">
+                <p>Прогноз: ...</p>
+                <p>Цена: ...</p>
+                <p>Комментарий: ...</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-content">
+                <h2>Секция 2</h2>
+                <img src="Сбер2.png" alt="Image 2">
+                <p>Прогноз: ...</p>
+                <p>Цена: ...</p>
+                <p>Комментарий: ...</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-content">
+                <h2>Секция 3</h2>
+                <img src="Сбер3.png" alt="Image 3">
+                <p>Прогноз: ...</p>
+                <p>Цена: ...</p>
+                <p>Комментарий: ...</p>
+            </div>
+            
+        </div>
+        <!-- Добавьте другие секции при необходимости -->
+    </div>
+    
+    <div class="scroll-btn scroll-up">↑</div>
+    <div class="scroll-btn scroll-down">↓</div>
+
+    <script>
+        const scrollUpBtn = document.querySelector('.scroll-up');
+        const scrollDownBtn = document.querySelector('.scroll-down');
+        const container = document.querySelector('.container');
+        const sections = container.querySelectorAll('.section');
+        let currentIndex = 0;
+
+        function scrollToSection(index) {
+            sections[index].scrollIntoView({ behavior: 'smooth' });
+            currentIndex = index;
+        }
+
+        scrollUpBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                scrollToSection(currentIndex - 1);
+            }
+        });
+
+        scrollDownBtn.addEventListener('click', () => {
+            if (currentIndex < sections.length - 1) {
+                scrollToSection(currentIndex + 1);
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

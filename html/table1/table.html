@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красивая Таблица</title>
+    <style>
+        /* Общие стили для таблицы */
+        table {
+            border-collapse: collapse; /* Объединение границ ячеек */
+            width: 100%; /* Ширина таблицы */
+            border: 1px solid #ccc; /* Общая граница таблицы */
+        }
+
+        th, td {
+            padding: 8px; /* Отступ внутри ячейки */
+            text-align: left; /* Выравнивание текста в ячейке */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Цвет фона заголовка */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Цвет фона четных строк */
+        }
+
+        /* Стили для заголовков колонок */
+        th {
+            background-color: #4CAF50; /* Цвет фона заголовков */
+            color: white; /* Цвет текста заголовков */
+        }
+
+        /* Стили при наведении на строку */
+        tr:hover {
+            background-color: #ddd; /* Цвет фона при наведении */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- Заголовки колонок -->
+        <tr>
+            <th>Имя</th>
+            <th>Возраст</th>
+            <th>Email</th>
+        </tr>
+
+        <!-- Данные в таблице -->
+        <tr>
+            <td>Иван</td>
+            <td>25</td>
+            <td>ivan@example.com</td>
+        </tr>
+        <tr>
+            <td>Мария</td>
+            <td>30</td>
+            <td>maria@example.com</td>
+        </tr>
+        <tr>
+            <td>Петр</td>
+            <td>35</td>
+            <td>petr@example.com</td>
+        </tr>
+    </table>
+</body>
+
+</html>

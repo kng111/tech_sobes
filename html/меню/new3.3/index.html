@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Макдоналдса</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Меню Макдоналдса</h1>
+    </header>
+
+    <nav>
+        <button class="category-btn" data-category="all">Все</button>
+        <button class="category-btn" data-category="lunch">Обеды</button>
+        <button class="category-btn" data-category="drinks">Горячие напитки</button>
+    </nav>
+
+    <section class="menu" id="menu">
+        <!-- Здесь будут отображены продукты -->
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="item-details" id="item-details">
+        <div class="item-details-content">
+            <h2 id="item-name"></h2>
+            <p id="item-description"></p>
+            <p>Калории: <span id="item-calories"></span></p>
+            <button class="close-details" onclick="closeDetails()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

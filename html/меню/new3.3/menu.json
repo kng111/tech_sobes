@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "category": "lunch",
+            "name": "Обед 1",
+            "description": "Описание обеда 1",
+            "price": "150 руб.",
+            "image": "lunch1.jpg"
+        },
+        {
+            "category": "lunch",
+            "name": "Обед 2",
+            "description": "Описание обеда 2",
+            "price": "180 руб.",
+            "image": "lunch2.jpg"
+        },
+        {
+            "category": "drinks",
+            "name": "Напиток 1",
+            "description": "Описание напитка 1",
+            "price": "50 руб.",
+            "image": "drink1.jpg"
+        },
+        {
+            "category": "drinks",
+            "name": "Напиток 2",
+            "description": "Описание напитка 2",
+            "price": "70 руб.",
+            "image": "drink2.jpg"
+        },
+        {
+            "category": "drinks",
+            "name": "Напиток 3",
+            "description": "Описание напитка 3",
+            "price": "75 руб.",
+            "image": "drink2.jpg"
+        }
+    ]
+}

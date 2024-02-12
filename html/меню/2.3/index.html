@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Макдональдс</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Макдональдс Меню</h1>
+        <button id="showMenu">Показать меню</button>
+    </header>
+    <div id="categories">
+        <button class="category" data-category="burgers">Бургеры</button>
+        <button class="category" data-category="fries">Картошка фри</button>
+        <button class="category" data-category="drinks">Напитки</button>
+    </div>
+    <div id="menu" class="hidden">
+        <!-- Бургеры -->
+        <div class="categoryItem burgers">
+            <h2>Бургеры</h2>
+            <div class="menuItem" id="burger1">
+                <img src="burger1.jpg" alt="Бургер 1">
+                <h3>Гамбургер</h3>
+                <p>Сочный гамбургер с салатом и соусом.</p>
+                <p>Калории: 250</p>
+                <p>Состав: хлеб, мясо, салат, соус</p>
+                <button class="details">Детали</button>
+            </div>
+            <div class="menuItem" id="burger2">
+                <img src="burger2.jpg" alt="Бургер 2">
+                <h3>Чизбургер</h3>
+                <p>Бургер с сыром и соусом.</p>
+                <p>Калории: 300</p>
+                <p>Состав: хлеб, мясо, сыр, салат, соус</p>
+                <button class="details">Детали</button>
+            </div>
+        </div>
+        <!-- Картошка фри -->
+        <div class="categoryItem fries">
+            <h2>Картошка фри</h2>
+            <div class="menuItem" id="fries1">
+                <img src="fries1.jpg" alt="Картошка фри 1">
+                <h3>Картошка фри маленькая</h3>
+                <p>Маленькая порция ароматной картошки по-французски.</p>
+                <p>Калории: 150</p>
+                <p>Состав: картошка, масло, соль</p>
+                <button class="details">Детали</button>
+            </div>
+            <div class="menuItem" id="fries2">
+                <img src="fries2.jpg" alt="Картошка фри 2">
+                <h3>Картошка фри большая</h3>
+                <p>Большая порция ароматной картошки по-французски.</p>
+                <p>Калории: 250</p>
+                <p>Состав: картошка, масло, соль</p>
+                <button class="details">Детали</button>
+            </div>
+        </div>
+        <!-- Горячие напитки -->
+        <div class="categoryItem drinks">
+            <h2>Горячие напитки</h2>
+            <div class="menuItem" id="coffee">
+                <img src="coffee.jpg" alt="Кофе">
+                <h3>Кофе</h3>
+                <p>Ароматный кофе для бодрости.</p>
+                <p>Калории: 100</p>
+                <p>Состав: кофе, вода, молоко (по желанию)</p>
+                <button class="details">Детали</button>
+            </div>
+            <div class="menuItem" id="tea">
+                <img src="tea.jpg" alt="Чай">
+                <h3>Чай</h3>
+                <p>Ароматный чай для уюта.</p>
+                <p>Калории: 50</p>
+                <p>Состав: чай, вода</p>
+                <button class="details">Детали</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

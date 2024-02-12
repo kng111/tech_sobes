@@ -1,0 +1,29 @@
+/* Ваш CSS стиль здесь */
+.hidden {
+    display: none;
+}
+
+.category {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.menuItem {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    max-width: 300px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menuItem img {
+    max-width: 100%;
+}
+
+.details {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

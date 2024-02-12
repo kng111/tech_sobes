@@ -1,0 +1,44 @@
+.stock-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Пробел между блоками */
+}
+
+.stock-item {
+    background-color: #333; /* Фон блока акции */
+    color: #fff; /* Цвет текста */
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Позиционирование для дополнительных данных */
+}
+
+.stock-info {
+    padding: 20px;
+}
+
+.stock-details {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.stock-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stock-price,
+.stock-forecast,
+.stock-comment {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.stock-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #444; /* Граница между изображением и информацией */
+}
